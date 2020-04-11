@@ -57,12 +57,12 @@ class StatsController {
                 print(json)
                 let playerStats = try decoder.decode(PlayerStats.self, from: data)
                 self.playerStats = playerStats
-                print("This is kills per game: \(playerStats.stats.squads?.killsPerGame)")
-                print("This is total kills: \(playerStats.stats.squads?.kills)")
-                print("This is K/D: \(playerStats.stats.squads?.killDeathRatio)")
-                print("This is total matches: \(playerStats.stats.squads?.matches)")
-                print("This is total wins: \(playerStats.stats.squads?.wins)")
-                print("This is win ratio: \(playerStats.stats.squads?.winRatio)")
+                print("This is kills per game: \(playerStats.stats.squads.killsPerGame)")
+                print("This is total kills: \(playerStats.stats.squads.kills)")
+                print("This is K/D: \(playerStats.stats.squads.killDeathRatio)")
+                print("This is total matches: \(playerStats.stats.squads.matches)")
+                print("This is total wins: \(playerStats.stats.squads.wins)")
+                print("This is win ratio: \(playerStats.stats.squads.winRatio)")
                 DispatchQueue.main.async {
                     completion(nil, playerStats)
                 }
