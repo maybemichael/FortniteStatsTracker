@@ -25,10 +25,8 @@ extension StatsDetailViewController: UICollectionViewDataSource {
         let player = statsController?.playerStats
         cell.player = player
         
-        print(indexPath)
-        
-        switch indexPath {
-        case [0, 0]:
+        switch indexPath.item {
+        case 0:
             cell.gameModeLabel.text = "Solos"
             cell.gameMode = .solos
             cell.totalWinsLabel.text = player?.stats.solos.wins
@@ -37,7 +35,7 @@ extension StatsDetailViewController: UICollectionViewDataSource {
             cell.kdLabel.text = player?.stats.solos.killDeathRatio
             cell.kpgLabel.text = player?.stats.solos.killsPerGame
             cell.totalMatchesLabel.text = player?.stats.solos.matches
-        case [0, 1]:
+        case 1:
             cell.gameModeLabel.text = "Duos"
             cell.gameMode = .duos
             cell.totalWinsLabel.text = player?.stats.duos.wins
@@ -46,7 +44,7 @@ extension StatsDetailViewController: UICollectionViewDataSource {
             cell.kdLabel.text = player?.stats.duos.killDeathRatio
             cell.kpgLabel.text = player?.stats.duos.killsPerGame
             cell.totalMatchesLabel.text = player?.stats.duos.matches
-        case [0, 2]:
+        case 2:
             cell.gameModeLabel.text = "Squads"
             cell.gameMode = .squads
             cell.totalWinsLabel.text = player?.stats.squads.wins
@@ -55,15 +53,15 @@ extension StatsDetailViewController: UICollectionViewDataSource {
             cell.kdLabel.text = player?.stats.squads.killDeathRatio
             cell.kpgLabel.text = player?.stats.squads.killsPerGame
             cell.totalMatchesLabel.text = player?.stats.squads.matches
-        case [0, 3]:
+        case 3:
             cell.gameModeLabel.text = "Lifetime Stats"
             cell.gameMode = .lifetime
-            cell.totalWinsLabel.text = player?.stats.squads.wins
-            cell.winRatioLabel.text = player?.stats.squads.winRatio
-            cell.totalKillsLabel.text = player?.stats.squads.kills
-            cell.kdLabel.text = player?.stats.squads.killDeathRatio
+            cell.totalWinsLabel.text = player?.lifeTimeStats?[8].value
+            cell.winRatioLabel.text = player?.lifeTimeStats?[9].value
+            cell.totalKillsLabel.text = player?.lifeTimeStats?[10].value
+            cell.kdLabel.text = player?.lifeTimeStats?[11].value
             cell.kpgLabel.text = player?.stats.squads.killsPerGame
-            cell.totalMatchesLabel.text = player?.stats.squads.matches
+            cell.totalMatchesLabel.text = player?.lifeTimeStats?[7].value
         default:
             cell.gameMode = .lifetime
         }

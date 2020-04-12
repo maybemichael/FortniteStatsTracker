@@ -19,12 +19,17 @@ class StatsDetailViewController: UIViewController, Storyboarded {
     
     @IBOutlet weak var epicUsernameLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
-   
+    @IBOutlet weak var top3DescriptionLabel: UILabel!
+    @IBOutlet weak var top6DescriptionLabel: UILabel!
+    @IBOutlet weak var top3Label: UILabel!
+    @IBOutlet weak var top6Label: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         collectionView.delegate = self
         collectionView.dataSource = self
+        updateViews()
     }
     
     func updateViews() {

@@ -39,99 +39,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "E3C70E99-1426-4CFB-91CD-EB38E2852DB7"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Fortnite Stats/Ext+CollectionViewDataSource.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "collectionView(_:cellForItemAt:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "E3C70E99-1426-4CFB-91CD-EB38E2852DB7 - c5e535cc599e478b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Fortnite_Stats.StatsDetailViewController.collectionView(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; __C.UICollectionViewCell"
-                  moduleName = "Fortnite Stats"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/michael/Documents/Development/FortniteStatsTracker/Fortnite%20Stats/Fortnite%20Stats/Ext+CollectionViewDataSource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28"
-                  offsetFromSymbolStart = "3666">
-               </Location>
-               <Location
-                  uuid = "E3C70E99-1426-4CFB-91CD-EB38E2852DB7 - c5e535cc599e478b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Fortnite_Stats.StatsDetailViewController.collectionView(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; __C.UICollectionViewCell"
-                  moduleName = "Fortnite Stats"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/michael/Documents/Development/FortniteStatsTracker/Fortnite%20Stats/Fortnite%20Stats/Ext+CollectionViewDataSource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28"
-                  offsetFromSymbolStart = "3728">
-               </Location>
-               <Location
-                  uuid = "E3C70E99-1426-4CFB-91CD-EB38E2852DB7 - c5e535cc599e478b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Fortnite_Stats.StatsDetailViewController.collectionView(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; __C.UICollectionViewCell"
-                  moduleName = "Fortnite Stats"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/michael/Documents/Development/FortniteStatsTracker/Fortnite%20Stats/Fortnite%20Stats/Ext+CollectionViewDataSource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28"
-                  offsetFromSymbolStart = "20292">
-               </Location>
-               <Location
-                  uuid = "E3C70E99-1426-4CFB-91CD-EB38E2852DB7 - c5e535cc599e478b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Fortnite_Stats.StatsDetailViewController.collectionView(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; __C.UICollectionViewCell"
-                  moduleName = "Fortnite Stats"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/michael/Documents/Development/FortniteStatsTracker/Fortnite%20Stats/Fortnite%20Stats/Ext+CollectionViewDataSource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28"
-                  offsetFromSymbolStart = "36871">
-               </Location>
-               <Location
-                  uuid = "E3C70E99-1426-4CFB-91CD-EB38E2852DB7 - c5e535cc599e478b"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Fortnite_Stats.StatsDetailViewController.collectionView(_: __C.UICollectionView, cellForItemAt: Foundation.IndexPath) -&gt; __C.UICollectionViewCell"
-                  moduleName = "Fortnite Stats"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/michael/Documents/Development/FortniteStatsTracker/Fortnite%20Stats/Fortnite%20Stats/Ext+CollectionViewDataSource.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "28"
-                  endingLineNumber = "28"
-                  offsetFromSymbolStart = "53450">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "44C400A5-7DE4-4F26-B22F-93E2691C9211"
             shouldBeEnabled = "No"
             ignoreCount = "0"
@@ -219,8 +126,8 @@
             filePath = "Fortnite Stats/View Controllers/StatsDetailViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
             landmarkName = "updateViews()"
             landmarkType = "7">
          </BreakpointContent>

@@ -29,6 +29,10 @@ class StatsDetailCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var kdLabel: UILabel!
     @IBOutlet weak var totalMatchesLabel: UILabel!
     @IBOutlet weak var kpgLabel: UILabel!
+    @IBOutlet weak var top3DescriptionLabel: UILabel!
+    @IBOutlet weak var top6DescriptionLabel: UILabel!
+    @IBOutlet weak var top3Label: UILabel!
+    @IBOutlet weak var top6Label: UILabel!
     
     
     
@@ -42,6 +46,10 @@ class StatsDetailCollectionViewCell: UICollectionViewCell {
             kdLabel.text = player.stats.solos.killDeathRatio
             kpgLabel.text = player.stats.solos.killsPerGame
             totalMatchesLabel.text = player.stats.solos.matches
+            top3DescriptionLabel.isHidden = true
+            top6DescriptionLabel.isHidden = true
+            top3Label.isHidden = true
+            top6Label.isHidden = true
         case .duos:
             totalWinsLabel.text = player.stats.duos.wins
             winRatioLabel.text = player.stats.duos.winRatio
@@ -49,6 +57,10 @@ class StatsDetailCollectionViewCell: UICollectionViewCell {
             kdLabel.text = player.stats.duos.killDeathRatio
             kpgLabel.text = player.stats.duos.killsPerGame
             totalMatchesLabel.text = player.stats.duos.matches
+            top3DescriptionLabel.isHidden = true
+            top6DescriptionLabel.isHidden = true
+            top3Label.isHidden = true
+            top6Label.isHidden = true
         case .squads:
             totalWinsLabel.text = player.stats.squads.wins
             winRatioLabel.text = player.stats.squads.winRatio
@@ -56,13 +68,23 @@ class StatsDetailCollectionViewCell: UICollectionViewCell {
             kdLabel.text = player.stats.squads.killDeathRatio
             kpgLabel.text = player.stats.squads.killsPerGame
             totalMatchesLabel.text = player.stats.squads.matches
+            top3DescriptionLabel.isHidden = true
+            top6DescriptionLabel.isHidden = true
+            top3Label.isHidden = true
+            top6Label.isHidden = true
         case .lifetime:
-            totalWinsLabel.text = player.stats.squads.wins
-            winRatioLabel.text = player.stats.squads.winRatio
-            totalKillsLabel.text = player.stats.squads.kills
-            kdLabel.text = player.stats.squads.killDeathRatio
+            totalWinsLabel.text = player.lifeTimeStats?[8].value
+            winRatioLabel.text = player.lifeTimeStats?[9].value
+            totalKillsLabel.text = player.lifeTimeStats?[10].value
+            kdLabel.text = player.lifeTimeStats?[11].value
             kpgLabel.text = player.stats.squads.killsPerGame
-            totalMatchesLabel.text = player.stats.squads.matches
+            totalMatchesLabel.text = player.lifeTimeStats?[7].value
+            top3DescriptionLabel.isHidden = false
+            top6DescriptionLabel.isHidden = false
+            top3Label.isHidden = false
+            top6Label.isHidden = false
+            top3Label.text = player.lifeTimeStats?[1].value
+            top6Label.text = player.lifeTimeStats?[2].value
         case .none:
             break
         }
