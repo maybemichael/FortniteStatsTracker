@@ -88,14 +88,26 @@ class AccountSearchViewController: UIViewController, Storyboarded, UITextFieldDe
     func platformSelected() {
         switch platform {
         case .pc:
+            pcPlatformButton.setImage(UIImage(named: "Epic Games Selected"), for: .normal)
+            psnPlatformButton.setImage(UIImage(named: "PSN Icon"), for: .normal)
+            xboxPlatformButton.setImage(UIImage(named: "Xbox Icon"), for: .normal)
+            
             pcPlatformButton.setTitleColor(#colorLiteral(red: 1, green: 0.9471729398, blue: 0.3208206296, alpha: 1), for: .normal)
             psnPlatformButton.setTitleColor(#colorLiteral(red: 0, green: 0.1154924706, blue: 0.193021059, alpha: 1), for: .normal)
             xboxPlatformButton.setTitleColor(#colorLiteral(red: 0, green: 0.1154924706, blue: 0.193021059, alpha: 1), for: .normal)
         case .psn:
+            pcPlatformButton.setImage(UIImage(named: "Epic Games Icon"), for: .normal)
+            psnPlatformButton.setImage(UIImage(named: "PSN Selected"), for: .normal)
+            xboxPlatformButton.setImage(UIImage(named: "Xbox Icon"), for: .normal)
+            
             pcPlatformButton.setTitleColor(#colorLiteral(red: 0, green: 0.1154924706, blue: 0.193021059, alpha: 1), for: .normal)
             psnPlatformButton.setTitleColor(#colorLiteral(red: 1, green: 0.9471729398, blue: 0.3208206296, alpha: 1), for: .normal)
             xboxPlatformButton.setTitleColor(#colorLiteral(red: 0, green: 0.1154924706, blue: 0.193021059, alpha: 1), for: .normal)
         case .xbox:
+            pcPlatformButton.setImage(UIImage(named: "Epic Games Icon"), for: .normal)
+            psnPlatformButton.setImage(UIImage(named: "PSN Icon"), for: .normal)
+            xboxPlatformButton.setImage(UIImage(named: "Xbox Selected"), for: .normal)
+            
             pcPlatformButton.setTitleColor(#colorLiteral(red: 0, green: 0.1154924706, blue: 0.193021059, alpha: 1), for: .normal)
             psnPlatformButton.setTitleColor(#colorLiteral(red: 0, green: 0.1154924706, blue: 0.193021059, alpha: 1), for: .normal)
             xboxPlatformButton.setTitleColor(#colorLiteral(red: 1, green: 0.9471729398, blue: 0.3208206296, alpha: 1), for: .normal)

@@ -146,36 +146,33 @@
                                 <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="words" autocorrectionType="no" keyboardAppearance="alert" returnKeyType="search"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4CV-HE-gtE">
-                                <rect key="frame" x="74" y="140" width="30" height="29"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4CV-HE-gtE">
+                                <rect key="frame" x="78" y="143" width="24" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="BurbankBigCondensed-Black" family="Burbank Big Condensed" pointSize="17"/>
-                                <state key="normal" title="PSN">
+                                <state key="normal" image="PSN">
                                     <color key="titleColor" red="0.043422780930000002" green="0.13548344370000001" blue="0.1999157667" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <action selector="psnButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cG7-AF-1Py"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jnp-Hh-62Z">
-                                <rect key="frame" x="112" y="140" width="32" height="29"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jnp-Hh-62Z">
+                                <rect key="frame" x="116" y="143" width="24" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="BurbankBigCondensed-Black" family="Burbank Big Condensed" pointSize="17"/>
-                                <state key="normal" title="XBox">
+                                <state key="normal" image="Xbox">
                                     <color key="titleColor" red="0.043422780930000002" green="0.13548344370000001" blue="0.1999157667" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <action selector="xboxButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ra1-1G-Zwa"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBM-A2-Vi4">
-                                <rect key="frame" x="36" y="140" width="30" height="29"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bBM-A2-Vi4">
+                                <rect key="frame" x="39" y="143" width="24" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="BurbankBigCondensed-Black" family="Burbank Big Condensed" pointSize="17"/>
-                                <state key="normal" title="PC">
+                                <state key="normal" image="Epic Games">
                                     <color key="titleColor" red="1" green="0.94551807639999996" blue="0.47011357549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
@@ -252,7 +249,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Stats" image="Stats" id="roY-K3-jBW"/>
+                    <tabBarItem key="tabBarItem" title="Stats" image="Fortnite" id="roY-K3-jBW"/>
                     <connections>
                         <outlet property="accountDescriptionLabel" destination="YcB-dF-ftS" id="Ndp-Jy-g9Q"/>
                         <outlet property="kdDescriptionLabel" destination="K3v-LM-ApO" id="1f8-ij-s2a"/>
@@ -664,7 +661,7 @@
                             <outlet property="delegate" destination="N1Q-gv-fgc" id="OfY-s6-zFm"/>
                         </connections>
                     </collectionView>
-                    <tabBarItem key="tabBarItem" title="Item Shop" image="Store" id="JB6-Vp-ez6"/>
+                    <tabBarItem key="tabBarItem" title="Item Shop" image="VBuck Icon" id="JB6-Vp-ez6"/>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R5i-8E-yBK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -693,9 +690,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Epic Games" width="24" height="24"/>
+        <image name="Fortnite" width="24" height="24"/>
         <image name="Midas" width="700" height="1244"/>
-        <image name="Stats" width="24" height="24"/>
-        <image name="Store" width="24" height="24"/>
+        <image name="PSN" width="24" height="24"/>
         <image name="VBuck" width="800" height="800"/>
+        <image name="VBuck Icon" width="24" height="24"/>
+        <image name="Xbox" width="24" height="24"/>
     </resources>
 </document>
