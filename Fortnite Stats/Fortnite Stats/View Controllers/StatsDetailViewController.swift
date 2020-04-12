@@ -11,12 +11,25 @@ import UIKit
 class StatsDetailViewController: UIViewController, Storyboarded {
     weak var coordinator: MainCoordinator?
     
-    let statsController = StatsController()
+    var statsController: StatsController? {
+        didSet {
+            updateViews()
+        }
+    }
     
+    @IBOutlet weak var epicUsernameLabel: UILabel!
+    @IBOutlet weak var collectionView: UICollectionView!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        
+        collectionView.delegate = self
+        collectionView.dataSource = self
+    }
+    
+    func updateViews() {
+        guard let player = statsController?.playerStats, isViewLoaded else { return }
+        epicUsernameLabel.text = player.userName
+
     }
 }

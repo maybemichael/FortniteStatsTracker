@@ -38,6 +38,8 @@
 		4CD1170B243939490015B1F2 /* BurbankBigCondensed-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 4CD1170A243939490015B1F2 /* BurbankBigCondensed-Black.otf */; };
 		4CD1170E243943C40015B1F2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD1170D243943C40015B1F2 /* Constants.swift */; };
 		4CD1171324394C110015B1F2 /* PlayerStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CD1171224394C110015B1F2 /* PlayerStats.swift */; };
+		4CEC2ABE2442FCA800D9BC9F /* StatsDetailCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEC2ABD2442FCA800D9BC9F /* StatsDetailCollectionViewCell.swift */; };
+		4CEC2AC02443131300D9BC9F /* StatsDetailCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEC2ABF2443131300D9BC9F /* StatsDetailCollectionViewController.swift */; };
 		4CEFE16D243FF76700C7BDFE /* StoreCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEFE16C243FF76700C7BDFE /* StoreCollectionViewController.swift */; };
 		4CEFE1702440032300C7BDFE /* ConcurrentOperations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEFE16F2440032300C7BDFE /* ConcurrentOperations.swift */; };
 		4CEFE1722440036A00C7BDFE /* StoreItemPhotoOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CEFE1712440036A00C7BDFE /* StoreItemPhotoOperation.swift */; };
@@ -99,6 +101,8 @@
 		4CD1170A243939490015B1F2 /* BurbankBigCondensed-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "BurbankBigCondensed-Black.otf"; sourceTree = "<group>"; };
 		4CD1170D243943C40015B1F2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		4CD1171224394C110015B1F2 /* PlayerStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStats.swift; sourceTree = "<group>"; };
+		4CEC2ABD2442FCA800D9BC9F /* StatsDetailCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsDetailCollectionViewCell.swift; sourceTree = "<group>"; };
+		4CEC2ABF2443131300D9BC9F /* StatsDetailCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsDetailCollectionViewController.swift; sourceTree = "<group>"; };
 		4CEFE16C243FF76700C7BDFE /* StoreCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreCollectionViewController.swift; sourceTree = "<group>"; };
 		4CEFE16F2440032300C7BDFE /* ConcurrentOperations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConcurrentOperations.swift; sourceTree = "<group>"; };
 		4CEFE1712440036A00C7BDFE /* StoreItemPhotoOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreItemPhotoOperation.swift; sourceTree = "<group>"; };
@@ -134,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				4C252AE0243FA014006FE8D3 /* StoreCollectionViewCell.swift */,
+				4CEC2ABD2442FCA800D9BC9F /* StatsDetailCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -225,6 +230,7 @@
 				4CD1170224391B0A0015B1F2 /* StatsDetailViewController.swift */,
 				4C252AD9243F9C05006FE8D3 /* StoreAndChallengesViewController.swift */,
 				4CEFE16C243FF76700C7BDFE /* StoreCollectionViewController.swift */,
+				4CEC2ABF2443131300D9BC9F /* StatsDetailCollectionViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -426,6 +432,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4C252ADC243F9E0B006FE8D3 /* Ext+CollectionViewDelegate.swift in Sources */,
+				4CEC2AC02443131300D9BC9F /* StatsDetailCollectionViewController.swift in Sources */,
 				4CD117062439223B0015B1F2 /* Coordinator.swift in Sources */,
 				4C252ADA243F9C05006FE8D3 /* StoreAndChallengesViewController.swift in Sources */,
 				4C6E66A8243E834600DA0E1B /* TextField.swift in Sources */,
@@ -450,6 +457,7 @@
 				4C5E60502441BA6500BA3E59 /* DuoStats.swift in Sources */,
 				4CEFE1702440032300C7BDFE /* ConcurrentOperations.swift in Sources */,
 				4CD1170E243943C40015B1F2 /* Constants.swift in Sources */,
+				4CEC2ABE2442FCA800D9BC9F /* StatsDetailCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

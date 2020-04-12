@@ -17,11 +17,10 @@ class StoreAndChallengesViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        storeCollectionView.delegate = self
-        storeCollectionView.dataSource = self
-        
         statsController.getCurrentStore { _ in
-            self.storeCollectionView.reloadData()
+            DispatchQueue.main.async {
+                self.storeCollectionView.reloadData()
+            }
         }
     }
     

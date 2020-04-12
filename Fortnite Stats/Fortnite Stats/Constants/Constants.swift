@@ -25,4 +25,5 @@ enum GameMode: String {
     case solos
     case duos
     case squads
+    case lifetime
 }

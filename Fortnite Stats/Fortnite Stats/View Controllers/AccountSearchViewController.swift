@@ -37,6 +37,7 @@ class AccountSearchViewController: UIViewController, Storyboarded, UITextFieldDe
     @IBOutlet weak var accountDescriptionLabel: UILabel!
     @IBOutlet weak var platformDescriptionLabel: UILabel!
     @IBOutlet weak var moreStatsButton: UIButton!
+    @IBOutlet weak var searchButton2: UIButton!
     
     
     
@@ -52,7 +53,16 @@ class AccountSearchViewController: UIViewController, Storyboarded, UITextFieldDe
         searchTextField.attributedPlaceholder = NSAttributedString(string: "Enter Account Name:", attributes: [NSAttributedString.Key.foregroundColor: UIColor.white])
         searchTextField.textColor = UIColor.white
         searchTextField.font = UIFont(name: "Montserrat-Medium", size: 17.0)
-        
+        pcPlatformButton.setImage(UIImage(named: "Epic Games Selected"), for: .normal)
+        let searchButton = UIButton()
+        searchButton.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(searchButton)
+        searchButton.setImage(UIImage(systemName: "magnifyingglass"), for: .normal)
+        searchButton.tintColor = #colorLiteral(red: 1, green: 0.943190515, blue: 0.376380682, alpha: 1)
+        searchTextField.rightView = searchButton
+        searchTextField.rightViewMode = .always
+        searchTextField.translatesAutoresizingMaskIntoConstraints = false
+        searchButton.addTarget(self, action: #selector(searchButtonTapped), for: .touchUpInside)
     }
     
     func updateViews() {
@@ -114,6 +124,18 @@ class AccountSearchViewController: UIViewController, Storyboarded, UITextFieldDe
         }
     }
     
+    @objc func searchButtonTapped() {
+        searchTextField.resignFirstResponder()
+        guard let searched = searchTextField.text, !searched.isEmpty else { return }
+        statsController.getStats(platform: platform, accountID: searched) { (_, searchedStats) in
+            self.searchedPlayer = searchedStats
+        }
+        
+        DispatchQueue.main.async {
+            self.updateViews()
+        }
+    }
+    
     // MARK: IB Actions
     
     @IBAction func pcButtonTapped(_ sender: Any) {
@@ -145,5 +167,12 @@ class AccountSearchViewController: UIViewController, Storyboarded, UITextFieldDe
             self.updateViews()
         }
         return true
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "StatsDetailSegue" {
+            guard let statsDetailVC = segue.destination as? StatsDetailViewController else { return }
+            statsDetailVC.statsController = statsController
+        }
     }
 }

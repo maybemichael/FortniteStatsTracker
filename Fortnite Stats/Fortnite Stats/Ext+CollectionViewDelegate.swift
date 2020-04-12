@@ -8,6 +8,12 @@
 
 import UIKit
 
-extension StoreAndChallengesViewController: UICollectionViewDelegate {
+extension StatsDetailViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 325, height: 400)
+    }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 25, left: 25, bottom: 25, right: 25)
+    }
 }
