@@ -12,9 +12,9 @@ import UIKit
 struct FeaturedCellLayoutConstants {
     struct Cell {
         // The height of the non-featured cell
-        static let standardHeight: CGFloat = 100
+        static let standardHeight: CGFloat = 75
         // The height of the first visible cell
-        static let featuredHeight: CGFloat = 325
+        static let featuredHeight: CGFloat = 350
     }
 }
 

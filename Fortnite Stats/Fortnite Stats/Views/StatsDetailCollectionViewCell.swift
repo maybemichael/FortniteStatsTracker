@@ -84,6 +84,8 @@ class StatsDetailCollectionViewCell: UICollectionViewCell {
         guard let player = player else { return }
         switch gameMode {
         case .solos:
+            gameModeLabel.text = "Solos"
+            imageView.image = UIImage(named: "MySkin")
             totalWinsLabel.text = player.stats.solos.wins
             winRatioLabel.text = player.stats.solos.winRatio
             totalKillsLabel.text = player.stats.solos.kills
@@ -95,6 +97,8 @@ class StatsDetailCollectionViewCell: UICollectionViewCell {
             top3Label.isHidden = true
             top6Label.isHidden = true
         case .duos:
+            gameModeLabel.text = "Duos"
+            imageView.image = UIImage(named: "SkullTrooper")
             totalWinsLabel.text = player.stats.duos.wins
             winRatioLabel.text = player.stats.duos.winRatio
             totalKillsLabel.text = player.stats.duos.kills
@@ -106,6 +110,8 @@ class StatsDetailCollectionViewCell: UICollectionViewCell {
             top3Label.isHidden = true
             top6Label.isHidden = true
         case .squads:
+            gameModeLabel.text = "Squads"
+            imageView.image = UIImage(named: "FortniteBlackKnight")
             totalWinsLabel.text = player.stats.squads.wins
             winRatioLabel.text = player.stats.squads.winRatio
             totalKillsLabel.text = player.stats.squads.kills
@@ -117,6 +123,8 @@ class StatsDetailCollectionViewCell: UICollectionViewCell {
             top3Label.isHidden = true
             top6Label.isHidden = true
         case .lifetime:
+            gameModeLabel.text = "Lifetime Stats"
+            imageView.image = UIImage(named: "RenegadeRaider")
             totalWinsLabel.text = player.lifeTimeStats?[8].value
             winRatioLabel.text = player.lifeTimeStats?[9].value
             totalKillsLabel.text = player.lifeTimeStats?[10].value
@@ -132,10 +140,11 @@ class StatsDetailCollectionViewCell: UICollectionViewCell {
         case .none:
             break
         }
-        
-//        self.layer.cornerRadius = 25
+        imageView.layer.cornerRadius = 5
+        imageCoverView.layer.cornerRadius = 5
+        self.layer.cornerRadius = 5
         self.layer.shadowColor = UIColor.black.cgColor
-        self.layer.borderWidth = 2.0
+        self.layer.borderWidth = 3
         self.layer.shadowOffset = CGSize(width: 2.0, height: 4.0)
         self.layer.shadowRadius = 15
         self.layer.shadowOpacity = 1.0

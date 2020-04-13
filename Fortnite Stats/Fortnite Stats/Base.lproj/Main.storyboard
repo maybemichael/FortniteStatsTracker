@@ -291,10 +291,10 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="e5f-jU-DMk">
-                                <rect key="frame" x="0.0" y="308" width="414" height="500"/>
+                                <rect key="frame" x="0.0" y="305" width="414" height="503"/>
                                 <color key="backgroundColor" red="0.220567286" green="0.50200647119999997" blue="0.55580353739999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="500" id="JKB-1Q-Vck"/>
+                                    <constraint firstAttribute="height" constant="503" id="DdW-0t-QES"/>
                                 </constraints>
                                 <collectionViewLayout key="collectionViewLayout" id="vfK-ff-Dts" customClass="FeaturedCellLayout" customModule="Fortnite_Stats" customModuleProvider="target"/>
                                 <cells>
@@ -306,9 +306,9 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vzq-UB-F8x">
-                                                    <rect key="frame" x="0.0" y="0.0" width="348" height="300"/>
+                                                    <rect key="frame" x="0.0" y="-23.5" width="348" height="347"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="height" constant="300" id="cyK-vN-B50"/>
+                                                        <constraint firstAttribute="height" constant="347" id="cyK-vN-B50"/>
                                                     </constraints>
                                                 </imageView>
                                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YP3-Dc-HfV">
