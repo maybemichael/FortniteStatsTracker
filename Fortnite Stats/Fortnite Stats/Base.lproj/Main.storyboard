@@ -290,249 +290,267 @@
                                 <color key="textColor" red="1" green="0.94551807639999996" blue="0.47011357549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="e5f-jU-DMk">
-                                <rect key="frame" x="0.0" y="340" width="414" height="468"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="e5f-jU-DMk">
+                                <rect key="frame" x="0.0" y="308" width="414" height="500"/>
                                 <color key="backgroundColor" red="0.220567286" green="0.50200647119999997" blue="0.55580353739999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="75" minimumInteritemSpacing="75" id="yfw-5o-XxD">
-                                    <size key="itemSize" width="348" height="612"/>
-                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
-                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="25" minY="25" maxX="25" maxY="25"/>
-                                </collectionViewFlowLayout>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="JKB-1Q-Vck"/>
+                                </constraints>
+                                <collectionViewLayout key="collectionViewLayout" id="vfK-ff-Dts" customClass="FeaturedCellLayout" customModule="Fortnite_Stats" customModuleProvider="target"/>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StatsDetailCell" id="5iG-rq-H6t" customClass="StatsDetailCollectionViewCell" customModule="Fortnite_Stats" customModuleProvider="target">
-                                        <rect key="frame" x="25" y="34" width="348" height="400"/>
+                                        <rect key="frame" x="33" y="0.0" width="348" height="300"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="saP-zA-LRR">
-                                            <rect key="frame" x="0.0" y="0.0" width="348" height="400"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="348" height="300"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="V5y-no-2OX">
-                                                    <rect key="frame" x="24" y="51" width="300" height="298"/>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vzq-UB-F8x">
+                                                    <rect key="frame" x="0.0" y="0.0" width="348" height="300"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="300" id="cyK-vN-B50"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YP3-Dc-HfV">
+                                                    <rect key="frame" x="0.0" y="0.0" width="348" height="300"/>
+                                                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Solos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQH-lH-Dca">
+                                                    <rect key="frame" x="0.0" y="20" width="348" height="40"/>
+                                                    <fontDescription key="fontDescription" name="BurbankBigCondensed-Black" family="Burbank Big Condensed" pointSize="40"/>
+                                                    <color key="textColor" red="1" green="0.94551807639999996" blue="0.47011357549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="PDT-3N-ZO2">
+                                                    <rect key="frame" x="25" y="80" width="135" height="206"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Solos" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wQH-lH-Dca">
-                                                            <rect key="frame" x="0.0" y="0.0" width="300" height="40"/>
-                                                            <constraints>
-                                                                <constraint firstAttribute="width" constant="300" id="hU8-Hf-XMb"/>
-                                                            </constraints>
-                                                            <fontDescription key="fontDescription" name="BurbankBigCondensed-Black" family="Burbank Big Condensed" pointSize="40"/>
-                                                            <color key="textColor" red="1" green="0.94551807639999996" blue="0.47011357549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="ozm-Rw-xoN">
-                                                            <rect key="frame" x="0.0" y="66" width="300" height="232"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="nR0-E2-0fP">
+                                                            <rect key="frame" x="0.0" y="0.0" width="135" height="43.5"/>
                                                             <subviews>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="R8w-3U-uzV">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="137" height="232"/>
-                                                                    <subviews>
-                                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="nR0-E2-0fP">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="135" height="60.5"/>
-                                                                            <subviews>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WINS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSV-Ia-SR7">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="135" height="18.5"/>
-                                                                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="15"/>
-                                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                    <nil key="highlightedColor"/>
-                                                                                </label>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="419" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKB-9D-juj">
-                                                                                    <rect key="frame" x="0.0" y="25.5" width="135" height="35"/>
-                                                                                    <fontDescription key="fontDescription" name="BurbankBigCondensed-Black" family="Burbank Big Condensed" pointSize="35"/>
-                                                                                    <color key="textColor" red="1" green="0.94551807639999996" blue="0.47011357549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                                    <nil key="highlightedColor"/>
-                                                                                </label>
-                                                                            </subviews>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="width" constant="135" id="qHG-dV-Xhj"/>
-                                                                            </constraints>
-                                                                        </stackView>
-                                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="IR8-YL-PMU">
-                                                                            <rect key="frame" x="0.0" y="61.5" width="135" height="55.5"/>
-                                                                            <subviews>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOTAL KILLS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qjR-ex-38E">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="135" height="18.5"/>
-                                                                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="15"/>
-                                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                    <nil key="highlightedColor"/>
-                                                                                </label>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10972" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6o-83-SOG">
-                                                                                    <rect key="frame" x="0.0" y="20.5" width="135" height="35"/>
-                                                                                    <fontDescription key="fontDescription" name="BurbankBigCondensed-Black" family="Burbank Big Condensed" pointSize="35"/>
-                                                                                    <color key="textColor" red="1" green="0.94551807639999996" blue="0.47011357549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                                    <nil key="highlightedColor"/>
-                                                                                </label>
-                                                                            </subviews>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="width" constant="135" id="gP4-yH-UTr"/>
-                                                                            </constraints>
-                                                                        </stackView>
-                                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="qBX-e7-B5b">
-                                                                            <rect key="frame" x="0.0" y="118" width="135" height="55.5"/>
-                                                                            <subviews>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOTAL MATCHES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZA-aV-1DT">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="135" height="18.5"/>
-                                                                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="15"/>
-                                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                    <nil key="highlightedColor"/>
-                                                                                </label>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3320" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Axu-Ef-VWB">
-                                                                                    <rect key="frame" x="0.0" y="20.5" width="135" height="35"/>
-                                                                                    <fontDescription key="fontDescription" name="BurbankBigCondensed-Black" family="Burbank Big Condensed" pointSize="35"/>
-                                                                                    <color key="textColor" red="1" green="0.94551807639999996" blue="0.47011357549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                                    <nil key="highlightedColor"/>
-                                                                                </label>
-                                                                            </subviews>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="width" constant="135" id="E8h-RD-tMR"/>
-                                                                            </constraints>
-                                                                        </stackView>
-                                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="2Jl-h5-EU1">
-                                                                            <rect key="frame" x="0.0" y="174.5" width="135" height="57.5"/>
-                                                                            <subviews>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOP 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GyY-qV-zbC">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="135" height="18.5"/>
-                                                                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="15"/>
-                                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                    <nil key="highlightedColor"/>
-                                                                                </label>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3320" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="saM-zz-mdd">
-                                                                                    <rect key="frame" x="0.0" y="22.5" width="135" height="35"/>
-                                                                                    <fontDescription key="fontDescription" name="BurbankBigCondensed-Black" family="Burbank Big Condensed" pointSize="35"/>
-                                                                                    <color key="textColor" red="1" green="0.94551807639999996" blue="0.47011357549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                                    <nil key="highlightedColor"/>
-                                                                                </label>
-                                                                            </subviews>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="width" constant="135" id="Vvp-5A-18W"/>
-                                                                            </constraints>
-                                                                        </stackView>
-                                                                    </subviews>
-                                                                </stackView>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="MLl-Ye-loz">
-                                                                    <rect key="frame" x="165" y="0.0" width="135" height="232"/>
-                                                                    <subviews>
-                                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="iYq-l2-Cng">
-                                                                            <rect key="frame" x="0.0" y="0.0" width="135" height="58.5"/>
-                                                                            <subviews>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="WIN RATIO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xw5-2m-VYc">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="135" height="22.5"/>
-                                                                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="15"/>
-                                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                    <nil key="highlightedColor"/>
-                                                                                </label>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="12.6%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fxs-uX-vFX">
-                                                                                    <rect key="frame" x="0.0" y="23.5" width="135" height="35"/>
-                                                                                    <fontDescription key="fontDescription" name="BurbankBigCondensed-Black" family="Burbank Big Condensed" pointSize="35"/>
-                                                                                    <color key="textColor" red="1" green="0.94551807639999996" blue="0.47011357549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                                    <nil key="highlightedColor"/>
-                                                                                </label>
-                                                                            </subviews>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="width" constant="135" id="ofF-OW-Ynt"/>
-                                                                            </constraints>
-                                                                        </stackView>
-                                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="saI-kd-nSm">
-                                                                            <rect key="frame" x="0.0" y="60.5" width="135" height="54.5"/>
-                                                                            <subviews>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="K/D" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMD-vD-Pn4">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="135" height="18.5"/>
-                                                                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="15"/>
-                                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                    <nil key="highlightedColor"/>
-                                                                                </label>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="3.78" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgD-TN-dtg">
-                                                                                    <rect key="frame" x="0.0" y="19.5" width="135" height="35"/>
-                                                                                    <fontDescription key="fontDescription" name="BurbankBigCondensed-Black" family="Burbank Big Condensed" pointSize="35"/>
-                                                                                    <color key="textColor" red="1" green="0.94551807639999996" blue="0.47011357549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                                    <nil key="highlightedColor"/>
-                                                                                </label>
-                                                                            </subviews>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="width" constant="135" id="LtE-sw-kmg"/>
-                                                                            </constraints>
-                                                                        </stackView>
-                                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Iz6-Kn-yDw">
-                                                                            <rect key="frame" x="0.0" y="117" width="135" height="55.5"/>
-                                                                            <subviews>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="KILLS PER GAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9t-aj-mey">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="135" height="18.5"/>
-                                                                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="15"/>
-                                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                    <nil key="highlightedColor"/>
-                                                                                </label>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="3.3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cE-ox-FTl">
-                                                                                    <rect key="frame" x="0.0" y="20.5" width="135" height="35"/>
-                                                                                    <fontDescription key="fontDescription" name="BurbankBigCondensed-Black" family="Burbank Big Condensed" pointSize="35"/>
-                                                                                    <color key="textColor" red="1" green="0.94551807639999996" blue="0.47011357549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                                    <nil key="highlightedColor"/>
-                                                                                </label>
-                                                                            </subviews>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="width" constant="135" id="Zam-2L-XH3"/>
-                                                                            </constraints>
-                                                                        </stackView>
-                                                                        <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="8Jp-aL-fKy">
-                                                                            <rect key="frame" x="0.0" y="174.5" width="135" height="57.5"/>
-                                                                            <subviews>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="TOP 6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XqL-cl-ReO">
-                                                                                    <rect key="frame" x="0.0" y="0.0" width="135" height="18.5"/>
-                                                                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="15"/>
-                                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                                                                    <nil key="highlightedColor"/>
-                                                                                </label>
-                                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="3.3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oab-i4-rpH">
-                                                                                    <rect key="frame" x="0.0" y="22.5" width="135" height="35"/>
-                                                                                    <fontDescription key="fontDescription" name="BurbankBigCondensed-Black" family="Burbank Big Condensed" pointSize="35"/>
-                                                                                    <color key="textColor" red="1" green="0.94551807639999996" blue="0.47011357549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                                                                    <nil key="highlightedColor"/>
-                                                                                </label>
-                                                                            </subviews>
-                                                                            <constraints>
-                                                                                <constraint firstAttribute="width" constant="135" id="JqO-s2-bFd"/>
-                                                                            </constraints>
-                                                                        </stackView>
-                                                                    </subviews>
-                                                                </stackView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WINS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jSV-Ia-SR7">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="135" height="18.5"/>
+                                                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="15"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="419" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LKB-9D-juj">
+                                                                    <rect key="frame" x="0.0" y="18.5" width="135" height="25"/>
+                                                                    <fontDescription key="fontDescription" name="BurbankBigCondensed-Black" family="Burbank Big Condensed" pointSize="25"/>
+                                                                    <color key="textColor" red="1" green="0.94551807639999996" blue="0.47011357549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
                                                             </subviews>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="300" id="alU-oh-agi"/>
+                                                                <constraint firstAttribute="width" constant="135" id="qHG-dV-Xhj"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="IR8-YL-PMU">
+                                                            <rect key="frame" x="0.0" y="51.5" width="135" height="45.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOTAL KILLS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qjR-ex-38E">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="135" height="18.5"/>
+                                                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="15"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10972" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E6o-83-SOG">
+                                                                    <rect key="frame" x="0.0" y="20.5" width="135" height="25"/>
+                                                                    <fontDescription key="fontDescription" name="BurbankBigCondensed-Black" family="Burbank Big Condensed" pointSize="25"/>
+                                                                    <color key="textColor" red="1" green="0.94551807639999996" blue="0.47011357549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="135" id="gP4-yH-UTr"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="qBX-e7-B5b">
+                                                            <rect key="frame" x="0.0" y="105" width="135" height="45.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOTAL MATCHES" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZA-aV-1DT">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="135" height="18.5"/>
+                                                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="15"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3320" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Axu-Ef-VWB">
+                                                                    <rect key="frame" x="0.0" y="20.5" width="135" height="25"/>
+                                                                    <fontDescription key="fontDescription" name="BurbankBigCondensed-Black" family="Burbank Big Condensed" pointSize="25"/>
+                                                                    <color key="textColor" red="1" green="0.94551807639999996" blue="0.47011357549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="135" id="E8h-RD-tMR"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="2Jl-h5-EU1">
+                                                            <rect key="frame" x="0.0" y="158.5" width="135" height="47.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOP 3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GyY-qV-zbC">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="135" height="18.5"/>
+                                                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="15"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3320" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="saM-zz-mdd">
+                                                                    <rect key="frame" x="0.0" y="22.5" width="135" height="25"/>
+                                                                    <fontDescription key="fontDescription" name="BurbankBigCondensed-Black" family="Burbank Big Condensed" pointSize="25"/>
+                                                                    <color key="textColor" red="1" green="0.94551807639999996" blue="0.47011357549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="135" id="Vvp-5A-18W"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                    </subviews>
+                                                </stackView>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="iRK-uw-ssd">
+                                                    <rect key="frame" x="188" y="80" width="135" height="206"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="iYq-l2-Cng">
+                                                            <rect key="frame" x="0.0" y="0.0" width="135" height="44.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WIN RATIO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xw5-2m-VYc">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="135" height="18.5"/>
+                                                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="15"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12.6%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fxs-uX-vFX">
+                                                                    <rect key="frame" x="0.0" y="19.5" width="135" height="25"/>
+                                                                    <fontDescription key="fontDescription" name="BurbankBigCondensed-Black" family="Burbank Big Condensed" pointSize="25"/>
+                                                                    <color key="textColor" red="1" green="0.94551807639999996" blue="0.47011357549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="135" id="ofF-OW-Ynt"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="saI-kd-nSm">
+                                                            <rect key="frame" x="0.0" y="52.5" width="135" height="44.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="K/D" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMD-vD-Pn4">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="135" height="18.5"/>
+                                                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="15"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.78" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vgD-TN-dtg">
+                                                                    <rect key="frame" x="0.0" y="19.5" width="135" height="25"/>
+                                                                    <fontDescription key="fontDescription" name="BurbankBigCondensed-Black" family="Burbank Big Condensed" pointSize="25"/>
+                                                                    <color key="textColor" red="1" green="0.94551807639999996" blue="0.47011357549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="135" id="LtE-sw-kmg"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Iz6-Kn-yDw">
+                                                            <rect key="frame" x="0.0" y="105" width="135" height="45.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="KILLS PER GAME" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x9t-aj-mey">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="135" height="18.5"/>
+                                                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="15"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8cE-ox-FTl">
+                                                                    <rect key="frame" x="0.0" y="20.5" width="135" height="25"/>
+                                                                    <fontDescription key="fontDescription" name="BurbankBigCondensed-Black" family="Burbank Big Condensed" pointSize="25"/>
+                                                                    <color key="textColor" red="1" green="0.94551807639999996" blue="0.47011357549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="135" id="Zam-2L-XH3"/>
+                                                            </constraints>
+                                                        </stackView>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="8Jp-aL-fKy">
+                                                            <rect key="frame" x="0.0" y="158.5" width="135" height="47.5"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TOP 6" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XqL-cl-ReO">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="135" height="18.5"/>
+                                                                    <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="15"/>
+                                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3.3" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oab-i4-rpH">
+                                                                    <rect key="frame" x="0.0" y="22.5" width="135" height="25"/>
+                                                                    <fontDescription key="fontDescription" name="BurbankBigCondensed-Black" family="Burbank Big Condensed" pointSize="25"/>
+                                                                    <color key="textColor" red="1" green="0.94551807639999996" blue="0.47011357549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="135" id="JqO-s2-bFd"/>
                                                             </constraints>
                                                         </stackView>
                                                     </subviews>
                                                 </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="V5y-no-2OX" firstAttribute="centerX" secondItem="saP-zA-LRR" secondAttribute="centerX" id="HEv-xw-fFc"/>
-                                                <constraint firstItem="V5y-no-2OX" firstAttribute="centerY" secondItem="saP-zA-LRR" secondAttribute="centerY" id="qmc-g1-mof"/>
+                                                <constraint firstAttribute="trailing" secondItem="YP3-Dc-HfV" secondAttribute="trailing" id="2Nu-7y-lHE"/>
+                                                <constraint firstItem="Vzq-UB-F8x" firstAttribute="leading" secondItem="saP-zA-LRR" secondAttribute="leading" id="9ED-8L-HlX"/>
+                                                <constraint firstItem="Vzq-UB-F8x" firstAttribute="centerY" secondItem="saP-zA-LRR" secondAttribute="centerY" id="Kag-Ua-ciX"/>
+                                                <constraint firstItem="PDT-3N-ZO2" firstAttribute="top" secondItem="wQH-lH-Dca" secondAttribute="bottom" constant="20" id="LP4-Xh-DRX"/>
+                                                <constraint firstItem="YP3-Dc-HfV" firstAttribute="top" secondItem="saP-zA-LRR" secondAttribute="top" id="Y0a-y5-ZRP"/>
+                                                <constraint firstItem="wQH-lH-Dca" firstAttribute="top" secondItem="saP-zA-LRR" secondAttribute="top" constant="20" id="asL-Lx-zdM"/>
+                                                <constraint firstAttribute="trailing" secondItem="wQH-lH-Dca" secondAttribute="trailing" id="cqb-L3-cv6"/>
+                                                <constraint firstAttribute="trailing" secondItem="Vzq-UB-F8x" secondAttribute="trailing" id="emg-Hf-9Pj"/>
+                                                <constraint firstAttribute="bottom" secondItem="YP3-Dc-HfV" secondAttribute="bottom" id="gI0-wZ-gh3"/>
+                                                <constraint firstItem="iRK-uw-ssd" firstAttribute="top" secondItem="wQH-lH-Dca" secondAttribute="bottom" constant="20" id="i8d-xi-BgY"/>
+                                                <constraint firstItem="YP3-Dc-HfV" firstAttribute="leading" secondItem="saP-zA-LRR" secondAttribute="leading" id="myh-cJ-oju"/>
+                                                <constraint firstAttribute="trailing" secondItem="iRK-uw-ssd" secondAttribute="trailing" constant="25" id="uAO-YS-TOX"/>
+                                                <constraint firstItem="PDT-3N-ZO2" firstAttribute="leading" secondItem="saP-zA-LRR" secondAttribute="leading" constant="25" id="wQv-En-YAb"/>
+                                                <constraint firstItem="wQH-lH-Dca" firstAttribute="leading" secondItem="saP-zA-LRR" secondAttribute="leading" id="zk8-2l-ZMC"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <color key="backgroundColor" red="0.043422780930000002" green="0.13548344370000001" blue="0.1999157667" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                        <size key="customSize" width="348" height="400"/>
+                                        <size key="customSize" width="348" height="300"/>
                                         <connections>
                                             <outlet property="gameModeLabel" destination="wQH-lH-Dca" id="ivX-M5-mBG"/>
+                                            <outlet property="imageCoverView" destination="YP3-Dc-HfV" id="5iX-Tx-VOU"/>
+                                            <outlet property="imageView" destination="Vzq-UB-F8x" id="QyJ-nH-Aoc"/>
+                                            <outlet property="kdDescriptionLabel" destination="QMD-vD-Pn4" id="tYz-33-Bka"/>
                                             <outlet property="kdLabel" destination="vgD-TN-dtg" id="71N-Fv-5wC"/>
+                                            <outlet property="kpgDescriptionLabel" destination="x9t-aj-mey" id="Ije-rx-KSJ"/>
                                             <outlet property="kpgLabel" destination="8cE-ox-FTl" id="p0k-HJ-56u"/>
-                                            <outlet property="top3DescriptionLabel" destination="GyY-qV-zbC" id="qVN-gj-zba"/>
+                                            <outlet property="top3DescriptionLabel" destination="GyY-qV-zbC" id="3qC-pT-c65"/>
                                             <outlet property="top3Label" destination="saM-zz-mdd" id="qzw-ta-JLW"/>
                                             <outlet property="top6DescriptionLabel" destination="XqL-cl-ReO" id="zi0-Ot-Btu"/>
                                             <outlet property="top6Label" destination="oab-i4-rpH" id="YGb-h6-EpU"/>
+                                            <outlet property="totalKillsDescriptionLabel" destination="qjR-ex-38E" id="r39-DQ-XNj"/>
                                             <outlet property="totalKillsLabel" destination="E6o-83-SOG" id="JCr-ES-I4G"/>
+                                            <outlet property="totalMatchesDescriptionLabel" destination="MZA-aV-1DT" id="T4i-fg-2r4"/>
                                             <outlet property="totalMatchesLabel" destination="Axu-Ef-VWB" id="9cm-wK-qDC"/>
                                             <outlet property="totalWinsLabel" destination="LKB-9D-juj" id="6YJ-0a-or6"/>
+                                            <outlet property="winRatioDescriptionLabel" destination="Xw5-2m-VYc" id="PUf-DX-KRv"/>
                                             <outlet property="winRatioLabel" destination="Fxs-uX-vFX" id="pWm-2y-ndl"/>
+                                            <outlet property="winsDescriptionLabel" destination="jSV-Ia-SR7" id="2iS-Nj-V1y"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tfue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fm4-NN-Ooh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tfue" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fm4-NN-Ooh">
                                 <rect key="frame" x="20" y="20" width="374" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="BurbankBigCondensed-Black" family="Burbank Big Condensed" pointSize="40"/>
                                 <color key="textColor" red="1" green="0.94551807639999996" blue="0.47011357549999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" red="0.220567286" green="0.50200647119999997" blue="0.55580353739999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="aHG-Yo-qrR" firstAttribute="trailing" secondItem="fm4-NN-Ooh" secondAttribute="trailing" constant="20" id="5Ip-z1-8mZ"/>
+                            <constraint firstItem="e5f-jU-DMk" firstAttribute="leading" secondItem="aHG-Yo-qrR" secondAttribute="leading" id="AQL-is-Rt1"/>
+                            <constraint firstItem="e5f-jU-DMk" firstAttribute="trailing" secondItem="aHG-Yo-qrR" secondAttribute="trailing" id="DmX-Im-8B5"/>
+                            <constraint firstItem="e5f-jU-DMk" firstAttribute="bottom" secondItem="aHG-Yo-qrR" secondAttribute="bottom" id="QM6-pM-T4Y"/>
+                            <constraint firstItem="fm4-NN-Ooh" firstAttribute="leading" secondItem="aHG-Yo-qrR" secondAttribute="leading" constant="20" id="YWV-DF-hnB"/>
+                            <constraint firstItem="fm4-NN-Ooh" firstAttribute="top" secondItem="aHG-Yo-qrR" secondAttribute="top" constant="20" id="Z8w-92-MC7"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="aHG-Yo-qrR"/>
                     </view>
                     <navigationItem key="navigationItem" id="uwT-KS-RcM"/>

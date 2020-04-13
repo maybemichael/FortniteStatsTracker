@@ -23,18 +23,62 @@ class StatsDetailCollectionViewCell: UICollectionViewCell {
     }
     
     @IBOutlet weak var gameModeLabel: UILabel!
+    @IBOutlet weak var winsDescriptionLabel: UILabel!
     @IBOutlet weak var totalWinsLabel: UILabel!
+    @IBOutlet weak var winRatioDescriptionLabel: UILabel!
     @IBOutlet weak var winRatioLabel: UILabel!
+    @IBOutlet weak var totalKillsDescriptionLabel: UILabel!
     @IBOutlet weak var totalKillsLabel: UILabel!
+    @IBOutlet weak var kdDescriptionLabel: UILabel!
     @IBOutlet weak var kdLabel: UILabel!
+    @IBOutlet weak var totalMatchesDescriptionLabel: UILabel!
     @IBOutlet weak var totalMatchesLabel: UILabel!
+    @IBOutlet weak var kpgDescriptionLabel: UILabel!
     @IBOutlet weak var kpgLabel: UILabel!
     @IBOutlet weak var top3DescriptionLabel: UILabel!
     @IBOutlet weak var top6DescriptionLabel: UILabel!
     @IBOutlet weak var top3Label: UILabel!
     @IBOutlet weak var top6Label: UILabel!
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var imageCoverView: UIView!
     
-    
+    override func apply(_ layoutAttributes: UICollectionViewLayoutAttributes) {
+        super.apply(layoutAttributes)
+        
+        // 1
+        let standardHeight = FeaturedCellLayoutConstants.Cell.standardHeight
+        let featuredHeight = FeaturedCellLayoutConstants.Cell.featuredHeight
+        
+        // 2
+        let delta = 1 - (
+            (featuredHeight - frame.height) / (featuredHeight - standardHeight)
+        )
+        
+        // 3
+        let minAlpha: CGFloat = 0.3
+        let maxAlpha: CGFloat = 0.75
+        imageCoverView.alpha = maxAlpha - (delta * (maxAlpha - minAlpha))
+        
+        let scale = max(delta, 0.5)
+        gameModeLabel.transform = CGAffineTransform(scaleX: scale, y: scale)
+        
+        winsDescriptionLabel.alpha = delta
+        totalWinsLabel.alpha = delta
+        winRatioDescriptionLabel.alpha = delta
+        winRatioLabel.alpha = delta
+        totalKillsDescriptionLabel.alpha = delta
+        totalKillsLabel.alpha = delta
+        kdDescriptionLabel.alpha = delta
+        kdLabel.alpha = delta
+        totalMatchesDescriptionLabel.alpha = delta
+        totalMatchesLabel.alpha = delta
+        kpgDescriptionLabel.alpha = delta
+        kpgLabel.alpha = delta
+        top3DescriptionLabel.alpha = delta
+        top3Label.alpha = delta
+        top6DescriptionLabel.alpha = delta
+        top6Label.alpha = delta
+    }
     
     func updateViews() {
         guard let player = player else { return }
@@ -89,7 +133,7 @@ class StatsDetailCollectionViewCell: UICollectionViewCell {
             break
         }
         
-        self.layer.cornerRadius = 25
+//        self.layer.cornerRadius = 25
         self.layer.shadowColor = UIColor.black.cgColor
         self.layer.borderWidth = 2.0
         self.layer.shadowOffset = CGSize(width: 2.0, height: 4.0)

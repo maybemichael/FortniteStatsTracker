@@ -35,6 +35,7 @@ extension StatsDetailViewController: UICollectionViewDataSource {
             cell.kdLabel.text = player?.stats.solos.killDeathRatio
             cell.kpgLabel.text = player?.stats.solos.killsPerGame
             cell.totalMatchesLabel.text = player?.stats.solos.matches
+            cell.imageView.image = UIImage(named: "MySkin")
         case 1:
             cell.gameModeLabel.text = "Duos"
             cell.gameMode = .duos
@@ -44,6 +45,7 @@ extension StatsDetailViewController: UICollectionViewDataSource {
             cell.kdLabel.text = player?.stats.duos.killDeathRatio
             cell.kpgLabel.text = player?.stats.duos.killsPerGame
             cell.totalMatchesLabel.text = player?.stats.duos.matches
+            cell.imageView.image = UIImage(named: "SkullTrooper")
         case 2:
             cell.gameModeLabel.text = "Squads"
             cell.gameMode = .squads
@@ -53,6 +55,7 @@ extension StatsDetailViewController: UICollectionViewDataSource {
             cell.kdLabel.text = player?.stats.squads.killDeathRatio
             cell.kpgLabel.text = player?.stats.squads.killsPerGame
             cell.totalMatchesLabel.text = player?.stats.squads.matches
+            cell.imageView.image = UIImage(named: "FortniteBlackKnight")
         case 3:
             cell.gameModeLabel.text = "Lifetime Stats"
             cell.gameMode = .lifetime
@@ -62,6 +65,7 @@ extension StatsDetailViewController: UICollectionViewDataSource {
             cell.kdLabel.text = player?.lifeTimeStats?[11].value
             cell.kpgLabel.text = player?.stats.squads.killsPerGame
             cell.totalMatchesLabel.text = player?.lifeTimeStats?[7].value
+            cell.imageView.image = UIImage(named: "RenegadeRaider")
         default:
             cell.gameMode = .lifetime
         }
